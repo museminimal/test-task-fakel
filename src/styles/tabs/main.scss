@@ -1,0 +1,44 @@
+.tabs {
+  max-width: 1200px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.input {
+  display: none;
+}
+
+.tab {
+  display: none;
+  padding: 20px;
+  border: none;
+  background: #AAF0D1;
+}
+
+.label {
+  display: inline-block;
+  padding: 7px;
+  margin: 0 -5px 0 0;
+  text-align: center;
+  color: #000000;
+  background: #5EC580;
+
+  border: none;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.label:hover {
+  background: #EBFDD8;
+}
+
+.tabs input:checked + label {
+  color: #000000;
+  border: none;
+  background: #AAF0D1;
+}
+
+#project-tab:checked ~ #projects-table,
+#users-tab:checked ~ #users-table {
+  display: block;
+}

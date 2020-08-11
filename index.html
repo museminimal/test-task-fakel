@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+</head>
+
+<body>
+<div id="app">
+    <div class="tabs">
+        <input class="input" type="radio" name="inset" value="" id="project-tab" checked>
+        <label class="label" for="project-tab">Projects</label>
+
+        <input class="input" type="radio" name="inset" value="" id="users-tab">
+        <label class="label" for="users-tab">Users</label>
+
+        <div class="tab" id="projects-table">
+            <label for="project-filter">Фильтровать по title:</label>
+            <input type="text" value="" id="project-filter" class="project-filter">
+
+            <button class="button projects-button--search">
+                Отфильтровать
+            </button>
+            <button class="button projects-button--clear">
+                Очистить
+            </button>
+
+            <table class="projects">
+                <thead>
+                    <tr class="project__titles">
+                        <th>project id</th>
+                        <th>title</th>
+                        <th>description</th>
+                        <th>author id</th>
+                        <th>phone</th>
+                    </tr>
+                </thead>
+
+                <tbody class="table-body"></tbody>
+            </table>
+        </div>
+
+        <div class="tab" id="users-table">
+            <label for="users-filter">Фильтровать по email:</label>
+            <input type="text" value="" id="users-filter" class="user-filter">
+
+            <button class="button users-button--search">
+                Отфильтровать
+            </button>
+            <button class="button users-button--clear">
+                Очистить
+            </button>
+
+            <table class="users">
+                <thead>
+                    <tr class="users__titles">
+                        <th>id</th>
+                        <th>first name</th>
+                        <th>last name</th>
+                        <th>address</th>
+                        <th>email</th>
+                        <th>phone</th>
+                        <th>description</th>
+                    </tr>
+                </thead>
+
+                <tbody class="table-body"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="src/index.js"></script>
+</body>
+</html>

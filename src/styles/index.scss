@@ -1,0 +1,17 @@
+@import "reset";
+
+html,
+body {
+  font-size: 16px;
+  font-family: "Arial Narrow", sans-serif;
+  background: #EBFDD8;
+}
+
+#app {
+  @import "tabs/main";
+  @import "tables/main";
+}
+
+.background-turquoise {
+  background: #00FA9A;
+}

@@ -1,0 +1,72 @@
+table {
+  margin-top: 20px;
+  border: 1px solid black;
+  font-size: 14px;
+  border-radius: 10px;
+  border-spacing: 0;
+  text-align: center;
+
+  thead {
+
+    th {
+      border-style: solid;
+      border-width: 0 1px 1px 0;
+      border-color: white;
+      background: #2E8B57;
+      color: white;
+      text-shadow: 0 1px 1px #2D2020;
+      padding: 10px 20px;
+    }
+  }
+
+  tbody {
+    background: #2E8B57;
+
+    td {
+      border-style: solid;
+      border-width: 0 1px 1px 0;
+      border-color: white;
+      color: white;
+      text-shadow: 0 1px 1px #2D2020;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+#project-filter, #users-filter {
+  padding: 5px;
+  border: none;
+  background: rgba(255, 255, 255, .5);
+  outline: none;
+  color: #333;
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.button {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+
+  &:hover {
+    background: rgb(53, 167, 110);
+  }
+
+  &:active {
+    :active {
+      background: rgb(33,147,90);
+      box-shadow: 0 3px rgb(33,147,90) inset;
+    }
+  }
+}
